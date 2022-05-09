@@ -14,7 +14,15 @@
     <style>
       .ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
       body{display: none;}
-      input{margin-top}
+      label{
+        width:100px;
+        display:inline-block;
+        margin: 4px;
+      }
+      #form{
+        border-radius: 10px;
+        padding: 4px;
+      }
     </style>
   </head>
   <body>
@@ -103,11 +111,11 @@
                           <div id="form">
                             <form>
                               <label> Apellidos y nombres:</label>
-                              <input type="text" name="nombre">
+                              <input type="text" name="nombre"><br>
                               <label> Fecha:</label>
-                              <input type="text" name="fecha">
+                              <input type="text" name="fecha"><br>
                               <label> Hora:</label>
-                              <input type="text" name="hora">
+                              <input type="text" name="hora"><br>
                             </form>
                           </div>
                         </div>
