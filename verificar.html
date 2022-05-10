@@ -107,7 +107,16 @@
             <div class="col-xl-5 d-none d-xl-inline-block">
               <h4 class="offset-none">Hoja de Atención</h4>
               <input type="file" accept="image/*" onchange="loadFile(event)">
-              
+              <img id="output"/>
+              <script>
+                var loadFile = function(event) {
+                  var output = document.getElementById('output');
+                  output.src = URL.createObjectURL(event.target.files[0]);
+                  output.onload = function() {
+                    URL.revokeObjectURL(output.src) // free memory
+                  }
+                };
+              </script>
               
               
               
