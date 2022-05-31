@@ -108,16 +108,7 @@
               <h4 class="offset-none">Hoja de Atención</h4>
               <input type="file" accept="image/*" onchange="loadFile(event)"></br>
               <img id="output"/></br>
-              <script>
-                var loadFile = function(event) {
-                  var output = document.getElementById('output');
-                  output.src = URL.createObjectURL(event.target.files[0]);
-                  output.onload = function() {
-                    URL.revokeObjectURL(output.src) // free memory
-                  }
-                };
-              </script>
-              
+           
               
               
               <img class="img-fluid" width="470" height="770" src="images/pages/about-us-01-470x7701.jpg" alt=""></div>
